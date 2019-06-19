@@ -1,10 +1,12 @@
+#!/usr/bin/pyhton3
 import numpy as np
-a=int(input("Enter rows:"))
-b=int(input("Enter columns: "))
-out=''
+import random
+row=int(input("Enter rows:"))
+col=int(input("Enter columns: "))
 f=open("array.txt","w")
-x=np.full((a,b),6)
+#Inserting random values in array
+x=np.random.randint(9,size=(row,col))
 print(x)
 f.write('Array\n')
-c = np.array2string(x)  # '[[1 2]\n [3 4]\n [5 6]]'. You can save this. Or
+#Saving integer data to array
 np.savetxt(f, x,fmt='%d')

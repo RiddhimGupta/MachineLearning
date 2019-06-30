@@ -1,3 +1,4 @@
+#importing libraries
 import pandas as pd
 # loading data
 df=pd.read_csv('http://13.234.66.67/summer19/datasets/social.csv')

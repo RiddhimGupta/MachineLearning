@@ -1,4 +1,4 @@
-from sklearn import datasets
+from sklearn import datasets #importing libraries
 import time
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
